@@ -1,5 +1,6 @@
 body {
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Spoqa Han Sans', sans-serif;
+    line-height: 160%;
     margin: 50px 25px;
 }
 
@@ -20,7 +21,7 @@ header, footer, div.page {
 
 header h1 {
     color: #169bbd;
-    margin: 0;
+    margin: 10;
     font-weight: normal;
     font-size: 42px;
 }
