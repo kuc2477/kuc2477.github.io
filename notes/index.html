@@ -1,9 +1,10 @@
 <!doctype html>
+
+<!-- styles -->
 <meta charset="utf-8">
 <meta name="theme-color" content="#169bbd">
 <link rel="stylesheet" href="../static/style.css">
 <link rel="shortcut icon" type="image/png" href="../static/favicon.ico"/>
-
 
 <!-- title -->
 <title>Ha Junsoo (河 俊 秀)'s Blog'</title>
@@ -78,10 +79,23 @@
 <!-- font -->
 <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
 
+<!-- flowtype -->
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="../static/flowtype.js"></script>
+<script>
+    $('body').flowtype({
+       minimum   : 300,
+       maximum   : 500,
+       minFont   : 12,
+       maxFont   : 20,
+       fontRatio : 30,
+    });
+</script>
+
 <!-- mathjax -->
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"> </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({ 
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
     });
 </script>
-<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"> </script>
