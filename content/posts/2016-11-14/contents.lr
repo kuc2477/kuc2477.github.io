@@ -36,7 +36,7 @@ body:
 
 > - $X = \\{x \mid \text{Observations}\\}$
 > - $P = \\{p \mid \text{Candidate distributions to explain observations}\\}$
-> - $MDL(X; P) = \arg\max\limits_{p \in P} H_p(X);$
+> - $MDL(X; P) = \arg\min\limits_{p \in P} H_p(X);$
 
 즉 관측값 $X$가 주어졌을 때, $X$를 설명할 분포 후보군 $P$ 중 $H_p(X)$가 가장 작은 것을 선택하라는 뜻이다.
 
