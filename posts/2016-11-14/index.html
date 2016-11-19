@@ -3,8 +3,9 @@
 <!-- styles -->
 <meta charset="utf-8">
 <meta name="theme-color" content="#169bbd">
-<link rel="stylesheet" href="../../static/style.css">
-<link rel="shortcut icon" type="image/png" href="../../static/favicon.ico"/>
+<link rel="stylesheet" href="../../static/normalize.css" />
+<link rel="stylesheet" href="../../static/style.css" />
+<link rel="shortcut icon" type="image/png" href="../../static/favicon.ico" />
 
 <!-- title -->
 <title>오컴의 면도날과 MDL 원칙</title>
@@ -45,7 +46,7 @@
 </blockquote>
 <p>모든 수험생들의 인성과 수학능력을 3박 4일 합숙을 통해 면밀히 평가할 수 있다면 좋겠지만, 우리 사회는 현실적으로 그런 비용을 감당할 만한 여유가 없다. 그래서 우리는 표준화된 시험을 통해 학생들의 학업능력을 추정하는, 시험이란 이름의 휴리스틱으로 학생들을 평가한다.</p>
 <p>이처럼 휴리스틱(Heuristic)이란 시간이나 정보가 불충분하여 합리적인 판단을 할 수 없는 경우, 신속하게 사용하는 <strong>어림짐작의 기술</strong>을 일컫는다.</p>
-<p>휴리스틱은 시험과 같은 추정(Estimation)뿐만 아니라 의사결정(Decision making) 문제에서도 자주 사용된다. 그 중 가장 대표적인 것이 <a href="https://en.wikipedia.org/wiki/Occam%27s_razor">오컴의 면도날 (Occam's Razor)</a>로, 다음과 같이 정의된다:</p>
+<p>휴리스틱은 시험과 같은 추정(Estimation)뿐만 아니라 의사결정(Decision making) 문제에서도 자주 사용되는데, 그 중 가장 대표적인 것이 <a href="https://en.wikipedia.org/wiki/Occam%27s_razor">오컴의 면도날 (Occam's Razor)</a>이다.</p>
 <blockquote><p><em>Frustra fit per plura quod potest fieri per pauciora</em><br>
 <em>같은 현상을 설명하는 두 개의 주장이 있다면, 간단한 쪽을 선택하라  - <small>William of Ockham</small></em></p>
 </blockquote>
@@ -68,7 +69,7 @@
 </ul>
 </blockquote>
 <p>즉 관측값 $X$가 주어졌을 때, $X$를 설명할 분포 후보군 $P$ 중 $H_p(X)$가 가장 작은 것을 선택하라는 뜻이다.</p>
-<p>한 가지 놀라운 사실은 평균 $\mu$와 표준편차 $\sigma$가 주어졌을 때 $MDL(X; P, \mu, \sigma) = N(\mu, \sigma^2)$이라는 것이다. 다시말해 분포의 평균과 표준편차가 주어졌을 때 MDL원칙 아래 가장 타당한 분포는 정규분포라는 의미인데, 이는 신호처리와 선형회귀 등에서 데이터 노이즈를 정규분포로 모델링 하는 것이 중심극한 정리 뿐만 아니라, 오컴의 면도날 관점에서도 가장 타당한 선택이라는 것을 시사한다.</p>
+<p>한 가지 재미있는 사실은 평균 $\mu$와 표준편차 $\sigma$가 주어졌을 때 $MDL(X; P, \mu, \sigma) = N(\mu, \sigma^2)$이라는 것이다. 다시말해 분포의 평균과 표준편차가 주어졌을 때 MDL원칙 아래 가장 타당한 분포는 정규분포라는 의미인데, 이는 신호처리와 선형회귀 등에서 데이터 노이즈를 정규분포로 모델링 하는 것이 중심극한 정리 뿐만 아니라, 오컴의 면도날 관점에서도 가장 타당한 선택이라는 것을 시사한다.</p>
 
   </div>
 

@@ -4,6 +4,10 @@ body {
     margin: 50px 25px;
 }
 
+a:-webkit-any-link {
+  text-decoration: none !important;
+}
+
 a {
     color: #2a99b6;
 }
