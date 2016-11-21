@@ -20,9 +20,6 @@ body:
 
 오컴의 면도날은 14세기 수도승이 주장한 매우 간단한 명제임에도 불구하고 그 단순함과 효용성으로 많은 현대 과학자들의 지지를 받고 있다. 하지만 추상적이고 모호한 정의 탓에 과학적으로 엄밀하게 적용하기가 어려워 일상생활이나 토론 따위에서 쓰이는 정도로 그치고 있었다. 학자들은 이 유용한 휴리스틱을 보다 엄밀하게 사용하기 위해 오랜시간 동안 수학적으로 정형화하려는 시도를 해왔는데, 그 중 가장 유명한 것이 1978년 핀란드 수학자 Jorma Rissanen가 제안한 [MDL(Minimum Description Length) 원칙][3]이다.
 
-> ![William of Ockham](/posts/2016-11-14/ockham.png)  
-> *<small>윌리엄 - 오컴(William of Ockham)</small>*
-
 > *For any probability distribution $P$, it is possible to construct a code $C$ such that the length (in bits) of $C(x)$ is equal to $-log _{2}P(x)$; This code minimizes the expected code length.*  
 >
 > *모든 분포 $P$에 대해 $P$를 $-log_{2}P(x)$ 비트(Bit) 만큼의 정보로 변환하는 코드 $C$가 존재한다; 이 코드는 해당 분포에 대한 설명의 길이를 최소화 하는 코드다 - <small>MDL Principle</small>*
@@ -36,7 +33,7 @@ body:
 
 > - $X = \\{x \mid \text{Observations}\\}$
 > - $P = \\{p \mid \text{Candidate distributions to explain observations}\\}$
-> - $MDL(X; P) = \arg\min\limits_{p \in P} H_p(X);$
+> - $MDL(X; P) = \arg\min\limits_{p \in P} H_p(X)$
 
 즉 관측값 $X$가 주어졌을 때, $X$를 설명할 분포 후보군 $P$ 중 $H_p(X)$가 가장 작은 것을 선택하라는 뜻이다.
 
