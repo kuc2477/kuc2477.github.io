@@ -4,11 +4,13 @@ pub_date: 2016-11-21
 ---
 body:
 
-*Disclaimer: 이 글은 [Andrej Karpathy][4]의 포스트 [The state of computer vision][1]과 [한 댓글][2]에서 영감을 받아 작성된 글입니다.*
+*Disclaimer: 이 글은 [Andrej Karpathy][4]의 포스트 [The state of computer vision][1]와 해당 글에 대한 [한 댓글][2]에서 영감을 받아 작성된 글입니다.*
 
 > *In spite of the opinions of certain narrow-minded people, who would shut up the human race upon this globe, as within some magic circle it must never outstep, we shall one day travel to the moon, the planets, and the stars, with the same facility, rapidity, and certainty as we now make the voyage from Liverpool to New York.*
 >
 > *이 세상에 인류가 넘어선 안될 선이 그어져 있는 것처럼 말하는, 좁은 생각을 가진 사람들이 우리의 입을 닫게끔 만들더라도, 우리는 언젠가 달로, 행성으로 그리고 다른 별로 여행을 갈 것입니다. 우리가 이제 리버풀에서 뉴욕으로 대서양을 건너듯 말입니다.* - *<small>Jules Verne (1828-1905)</small>*
+
+컴퓨터 비전은 0과 1로 이루어진 시각 데이터를 컴퓨터가 인지하게끔 만드는 학문이다. 2012년 Geofferey Hinton의 AlexNet이 딥러닝 전성시대의 신호탄을 쏘아올린 이후로 수많은 인공신경망 아키텍처들이 고안되었고, 인류는 이미지 분류, 사물탐지 등의 분야에서 비약적인 성능 향상을 이루어냈다. 실제로 얼굴인식의 경우 인공신경망이 인간의 인식률을 능가하는 등의 기념비적인 성과들이 있어왔다.
 
 [1]: http://karpathy.github.io/2012/10/22/state-of-computer-vision/
 [2]: http://disq.us/p/t1vykk
