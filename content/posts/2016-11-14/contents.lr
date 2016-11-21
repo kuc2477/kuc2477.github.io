@@ -26,7 +26,7 @@ body:
 
 확률분포 $P$를 $B = -log_{2}P(x)$ 비트(Bit)에 저장하는 과정 $C$가 모든 분포 $P$에 대해 항상 존재하며, 이 $C$는 저장될 비트 수에 대한 기댓값 $\mathbb{E}_p[B]$, 즉 $P$에 대한 정보 엔트로피 $H_p(X)$를 최소화한다는 것이다. MDL 원칙은 여기서 $P$에 대한 설명의 길이 $\mathbb{E}_p[B]$가 가장 짧은 $P$를 선택할 것을 권장한다.
 
-> ![Normal Distribution](/posts/2016-11-14/normal-distribution.png)  
+> ![Normal Distribution](/posts/2016-11-14/normal-distribution.jpg)  
 > *<small>정규분포는 $\mu$와 $\sigma$가 주어졌을 때 오컴의 면도날 관점에서 가장 타당한 분포다</small>*
 
 요약하자면 **오컴은 가장 짧은 설명의 가설을 선호했으므로 우리는 $H_p(X)$를 최소화하는 $P$를 선택해야 한다**는 것이다. 이를 수식으로 표현하면 다음과 같이 정의된다:

@@ -16,6 +16,11 @@ a:hover {
     color: #33bbdf;
 }
 
+img {
+  max-height: 220px;
+  width: 100%;
+}
+
 header, footer, div.page {
     width: 760px;
     margin: 0 auto;
