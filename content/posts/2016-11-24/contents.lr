@@ -22,9 +22,9 @@ body:
 
 - dev 환경과 production 환경에서의 의존성을 분리해서 관리할 수 있도록 파티션 기능을 지원한다.
 
-첫 번째와 두 번째 기능은 루비의 Bundler와 PHP의 Composer에서 의존성을 관리하던 방식으로, 주 의존성과 전체 pinned 의존성을 따로 관리할 수 있게함으로서 의존성 업데이트의 편리함과 빌드의 deterministic한 재생산 가능성을 보장해 줄 것이다.
+처음 두 기능은 루비의 Bundler와 PHP의 Composer에서 의존성을 관리하던 방식으로, 주 의존성과 전체 pinned 의존성을 따로 관리할 수 있게함으로서 의존성 업데이트의 편리함과 빌드의 deterministic한 재생산 가능성을 보장해 줄 것이다.
 
-세 번째 기능은 npm에서 요긴하게 쓰이던 기능으로, 이전에는 <small>requirements.dev.txt</small>와 <small>requirements.prod.txt</small>에 개발환경 의존성과 배포환경 의존성을 나누어 기록했다면, 이제 <small>Pipfile</small> 하나로 두 가지 환경에 대한 의존성을 함께 관리할 수 있게 될 것으로 보인다.
+마지막 기능은 npm에서 요긴하게 쓰이던 기능으로, 이전에는 <small>requirements.dev.txt</small>와 <small>requirements.prod.txt</small>에 개발환경 의존성과 배포환경 의존성을 나누어 기록했다면, 이제 <small>Pipfile</small> 하나로 두 가지 환경에 대한 의존성을 함께 관리할 수 있게 될 것으로 보인다.
 
 이외에도 플랫폼 별 의존성을 따로 설정할 수 있게끔 하는 등, 다양한 패키징 옵션들이 추가될 것으로 예상된다.
 
