@@ -1,0 +1,8 @@
+title: 파이썬 의존성 관리
+---
+pub_date: 2016-11-24
+---
+body:
+
+[1]: https://github.com/pypa/pipfile
+[2]: https://www.kennethreitz.org/essays/a-better-pip-workflow
