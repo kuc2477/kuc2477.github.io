@@ -37,7 +37,7 @@
   <h2>About Me</h2>
   <p><strong>Interests</strong></p>
 <ul>
-<li>컴퓨터공학 그리고 수학을 전공하고 있습니다.  </li>
+<li>컴퓨터과학과 수학을 전공하고 있습니다.  </li>
 <li>기계학습과 인공신경망을 공부중입니다.</li>
 <li>니체와 쇼펜하우어, 그리고 이문열 작가의 글을 좋아합니다.</li>
 <li>사람이 많은 곳 보단 적은 곳을 좋아합니다.</li>
@@ -71,7 +71,7 @@
        maximum   : 500,
        minFont   : 12,
        maxFont   : 20,
-       fontRatio : 30,
+       fontRatio : 33,
     });
 </script>
 
@@ -79,6 +79,13 @@
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"> </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({ 
-      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      CommonHTML: {
+        scale: 90,
+      },
     });
-</script>
+  </script>
+
+  <!-- highlightjs -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
