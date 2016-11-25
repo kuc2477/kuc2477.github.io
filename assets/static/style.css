@@ -21,7 +21,8 @@ img {
 }
 
 header, footer, div.page {
-    width: 760px;
+    max-width: 760px;
+    min-width: 200px;
     margin: 0 auto;
     background: #daeef3;
     padding: 20px 30px;
