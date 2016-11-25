@@ -4,7 +4,7 @@
 {% block body %}
   <ul>
     {% for child in this.pagination.items %}
-    <li><a href="{{ child|url }}">{{ child.title }} ({{ child.pub_date }})</a></li>
+    <li><a href="{{ child|url }}">{{ child.title }} <small>({{ child.pub_date }})</small></a></li>
     {% endfor %}
   </ul>
   {{ render_pagination(this.pagination) }}
