@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#===============================================================================
+#
+#          FILE: build.sh
+#
+#         USAGE: ./build.sh
+#
+#   DESCRIPTION: Stage, commit, push, build and deploy all changes.
+#
+#       OPTIONS: ---
+#  REQUIREMENTS: ---
+#          BUGS: ---
+#         NOTES: ---
+#        AUTHOR: Ha Junsoo
+#  ORGANIZATION:
+#       CREATED: 2016년 11월 25일 00:08
+#      REVISION:  ---
+#===============================================================================
+
+set -o nounset                              # Treat unset variables as an error
+
+timestamp=`date`
+git add -A
+git commit -m "build - ${timestamp}"
+git push origin source
+lektor clean
+lektor build
+lektor deploy
