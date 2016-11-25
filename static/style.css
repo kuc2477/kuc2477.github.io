@@ -48,6 +48,34 @@ div.page ul {
   -webkit-padding-start: 35px;
 }
 
+@media only screen and (max-width: 760px) {
+  blockquote {
+    -webkit-margin-start: 24px;
+    -webkit-margin-end: 24px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  blockquote {
+    -webkit-margin-start: 15px;
+    -webkit-margin-end: 15px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  blockquote {
+    -webkit-margin-start: 12px;
+    -webkit-margin-end: 12px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  blockquote {
+    -webkit-margin-start: 8px;
+    -webkit-margin-end: 8px;
+  }
+}
+
 @media only screen and (max-width: 390px) {
   body {
     margin: 15px 15px;
@@ -59,6 +87,11 @@ div.page ul {
 
   div.page ul {
     -webkit-padding-start: 24px;
+  }
+
+  blockquote {
+    -webkit-margin-start: 5px;
+    -webkit-margin-end: 5px;
   }
 }
 
