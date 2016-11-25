@@ -31,7 +31,7 @@ img {
   width: 100%;
 }
 
-header, footer {
+header, footer, div.page {
     max-width: 760px;
     min-width: 200px;
     margin: 0 auto;
@@ -40,21 +40,18 @@ header, footer {
 }
 
 div.page  {
-    max-width: 760px;
-    min-width: 200px;
-    margin: 0 auto;
     background: #ffffff;
     padding: 5px 20px 20px 20px;
 }
 
-div.page.ul {
-  display: block;
-  list-style-type: disc;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 30px;
+div.page ul {
+  -webkit-padding-start: 35px;
+}
+
+@media only screen and (max-width: 400px) {
+  div.page ul {
+    -webkit-padding-start: 21px;
+  }
 }
 
 header h1 {
