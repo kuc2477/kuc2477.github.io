@@ -31,12 +31,20 @@ img {
   width: 100%;
 }
 
-header, footer, div.page {
+header, footer {
     max-width: 760px;
     min-width: 200px;
     margin: 0 auto;
     background: #daeef3;
     padding: 20px 30px;
+}
+
+div.page  {
+    max-width: 760px;
+    min-width: 200px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 5px 20px 20px 20px;
 }
 
 header h1 {
@@ -61,8 +69,4 @@ header nav ul li {
     display: inline;
     margin: 0 8px 0 0;
     padding: 0;
-}
-
-div.page {
-    background: #ffffff;
 }
