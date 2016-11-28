@@ -45,10 +45,10 @@
   <blockquote><p><img src="../../posts/2016-11-24/requirements.png" alt="requirements.txt 파일">
 <em><small>일반적인 pip 프로젝트의 requirements.txt. 주 의존성과 부수적 의존성의 구분이 없다</small></em></p>
 </blockquote>
-<p>파이썬의 <a href="../../posts/2016-11-23">훌륭한 라이브러리 생태계</a>에도 불구하고, 큰 프로젝트를 시작할 때면 항상 <code>requirements.txt</code>를 통해 의존성을 관리하는 방식 때문에 고생을 한다. pip 프로젝트의 경우 일반적으로 <code>pip freeze</code>를 통해 현재 파이썬 런타임에 설치된 패키지들의 버전들을 pin하여 <code>requirements.txt</code>에 기록하여 관리한다. 그런데 이런식으로 의존성을 관리할 경우 주 의존성과 부수적 의존성들을 구분하기 어렵고, 따라서 라이브러리 버전 업데이트가 필요한 경우 수작업을 통해 서로의 요구조건에 부합하는 버전을 짜맞추어야 하는 <a href="https://www.kennethreitz.org/essays/a-better-pip-workflow#thefrustrations">처참한 상황</a>이 발생할 수 있다.</p>
-<p>간단한 예를 들어보자. 기존의 주 의존성 <em>A.1</em>이 <em>B.2x</em>에 의존하고, 새로 업데이트 된 <em>A.2</em>가 <em>B.3x</em>에 의존하는 상황에서 단순히 주어진 <code>requirements.txt</code>의 <em>A.1</em>을 <em>A.2</em>로 바꾸어 의존성을 업데이트 하려는 경우, <em>B</em>에서 버전충돌이 일어나게 된다. <code>requirements.txt</code>에 부수적 의존성인 <em>B.2x</em>가 명시되어 있기 때문이다. 작은 장난감 프로젝트에서야 눈대중으로 <code>requirements.txt</code>을 흝어보며 <em>B</em>도 알맞게 버전을 갱신해주는 방식으로 해결 가능하지만, 수십개의 라이브러리를 쓰는 큰 규모의 프로젝트에서 이런 일이 발생할 경우엔 정말 절망적인 상황이 벌어진다.</p>
+<p>파이썬의 <a href="../../posts/2016-11-23">훌륭한 라이브러리 생태계</a>에도 불구하고, 큰 프로젝트를 시작할 때면 항상 <code>requirements.txt</code>를 통해 의존성을 관리하는 방식 때문에 고생을 한다. 일반적으로 pip 프로젝트의 경우 <code>pip freeze</code>를 통해 현재 파이썬 런타임에 설치된 패키지들의 버전들을 pin하여 <code>requirements.txt</code>에 저장한다. 그런데 이런식으로 의존성을 관리할 경우 주 의존성과 부수적 의존성들을 구분하기 어렵고, 따라서 라이브러리 버전 업데이트가 필요한 경우 수작업을 통해 서로의 요구조건에 부합하는 버전을 짜맞추어야 하는 <a href="https://www.kennethreitz.org/essays/a-better-pip-workflow#thefrustrations">처참한 상황</a>이 발생할 수 있다.</p>
+<p>간단한 예를 들어보자. 기존의 주 의존성 <em>A.1</em>이 <em>B.2x</em>에 의존하고, 새로 업데이트 된 <em>A.2</em>가 <em>B.3x</em>에 의존하는 상황에서 단순히 주어진 <code>requirements.txt</code>의 <em>A.1</em>을 <em>A.2</em>로 바꾸어 의존성을 업데이트 하려는 경우, <em>B</em>에서 버전충돌이 일어나게 된다. <code>requirements.txt</code>에 부수적 의존성인 <em>B.2x</em>가 명시되어 있기 때문이다. 작은 장난감 프로젝트에서야 눈대중으로 <code>requirements.txt</code>을 흝어보며 <em>B</em>도 알맞게 버전을 갱신해주는 방식으로 해결 가능하지만, 수십개의 라이브러리를 쓰는 큰 규모의 프로젝트에서 이런 일이 발생할 경우엔 절망적인 상황이 벌어진다.</p>
 <p>이 문제는 사실 <code>requirements.txt</code>에 pinned 의존성을 저장하는 기존 방식 그 자체 때문이 아니라, <strong>주 의존성과 전체 의존성의 pinned version을 따로 관리하는 메커니즘을 제공하지 않기 때문에 발생하는 문제다.</strong></p>
-<p>다행히도 pypa에서 이 두 가지 의존성을 동시에 관리할 수 있도록 보장하는 <a href="https://github.com/pypa/pipfile">Pipfile의 명세를 작성하는 작업을 며칠 전 시작했다</a>. 아직 확정되진 않았지만, 주요 기능은 다음과 같다:</p>
+<p>다행히 pypa팀에서 이 두 가지 의존성을 동시에 관리할 수 있도록 보장하는 <a href="https://github.com/pypa/pipfile">Pipfile의 명세를 작성하는 작업을 며칠 전 시작했다</a>. 아직 명세가 확정되진 않았지만, 주요 기능은 다음과 같다:</p>
 <blockquote><p><img src="../../posts/2016-11-24/pipfile.png" alt="Pipfile 파일">
 <em><small>현재 명세 초안에 공개된 Pipfile 예시. Pipfile은 주 의존성만을 기록하고, 전체 의존성은 Pipfile.lock에 pin된다</small></em></p>
 </blockquote>
@@ -58,7 +58,7 @@
 <li>개발환경과 배포환경에서의 의존성을 따로 관리할 수 있도록 의존성 분리 기능을 지원한다.</li>
 </ul>
 <p>사실 위 기능들은 모두 PHP의 Composer나 Ruby의 Bundler, JavaScript의 NPM 등에서 빌려온 아이디어다. 이 문제는 <a href="https://medium.com/@alonisser/things-i-wish-pip-learned-from-npm-f712fa26f5bc#.v1izpzcsc">몇 년 전부터 커뮤니티에서 제기되어왔던 문제</a>임에도 불구하고 왜 이제서야 pypa팀에서 대응책이 나온건지는 나도 잘 이해가 안된다.</p>
-<p>명세 초안에 Pipfile의 포맷이 정적인 JSON이나 TOML가 아니라 <a href="https://news.ycombinator.com/item?id=13011932#unv_13012683">일반 파이썬 executable로 구상되어 있는 점에 대한 논란</a>이 있긴 하지만, 개인적으로 이 정도면 기존의 절망적인 상황에 비해 큰 발전이라고 생각한다. Pipfile 구현체의 배포는 파이썬 3.4에 asyncio가 표준 라이브러리로 추가된 일 이후로 파이썬 생태계에 가장 큰 영향을 줄 사건이 될 것이다.</p>
+<p>명세 초안에 Pipfile의 포맷이 정적인 JSON이나 TOML가 아니라 <a href="https://news.ycombinator.com/item?id=13011932#unv_13012683">일반 파이썬 executable로 구상되어 있는 점에 대한 논란</a>이 있긴 하지만, 개인적으로 이 정도면 기존의 절망적인 상황에 비해 큰 발전이라고 생각한다. Pipfile 구현체의 배포는 파이썬 3.4에 asyncio가 표준 라이브러리로 추가된 일 이후로 파이썬 생태계에 가장 큰 영향을 줄 것으로 보인다.</p>
 
   </div>
 
