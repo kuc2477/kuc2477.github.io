@@ -14,8 +14,6 @@ body:
 > *Frustra fit per plura quod potest fieri per pauciora*  
 > *같은 현상을 설명하는 두 개의 주장이 있다면, 간단한 쪽을 선택하라  - <small>William of Ockham</small>*
 
-핵심은 **필요한 최소한의 전제만을 가지고 있는 것을 선택하라**는 것으로, [최소주의][2] 철학과 일맥상통한다.
-
 오컴의 면도날은 14세기 수도승이 주장한 매우 간단한 명제임에도 불구하고 다양한 분야에서 효용성을 입증해 오늘날까지도 많은 과학자들의 지지를 받고있다. 하지만 20세기 중반까지만 해도 오컴의 면도날은 추상적이고 모호한 정의 때문에 과학적으로 엄밀하게 적용하기가 어려워 일상생활이나 방법론 차원에서 쓰이는 정도로 그치고 있었다. 학자들은 이 유용한 휴리스틱을 엄밀하게 사용하기 위해 오랜시간 수학적으로 정형화하려는 시도를 해왔고, 그 중 가장 유명한 것이 1978년 핀란드 수학자 Jorma Rissanen가 제안한 [MDL(Minimum Description Length) 원칙][3]이다.
 
 > *For any probability distribution $P$, it is possible to construct a code $C$ such that the length (in bits) of $C(x)$ is equal to $-log _{2}P(x)$. This code minimizes the expected code length.*  
