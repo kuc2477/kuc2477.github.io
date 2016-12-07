@@ -32,7 +32,7 @@ img {
 }
 
 header, footer, div.page {
-    max-width: 900px;
+    max-width: 720px;
     min-width: 200px;
     margin: 0 auto;
     background: #daeef3;
