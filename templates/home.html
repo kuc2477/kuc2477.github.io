@@ -9,8 +9,8 @@
   <h2>{{ this.title }}</h2>
   {{ this.body }}
 
-  <h3>최근 작성한 글</h3>
-  <ul>
+  <h3 style="margin-bottom: 10px;">최근 작성한 글</h3>
+  <ul style="margin-top: 5px;">
     {% for child in (all|sort(attribute='pub_date', reverse=True))[:3] %}
     {{ render_link(child) }}
     {% endfor %}
