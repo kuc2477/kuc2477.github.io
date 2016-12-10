@@ -1,10 +1,12 @@
 {% extends "layout.html" %}
 {% from "macros/blog.html" import render_blog_post %}
 {% from "macros/pagination.html" import render_pagination %}
+{% from "macros/link.html" import render_link %}
+
 {% block body %}
   <ul>
     {% for child in this.pagination.items %}
-    <li><a href="{{ child|url }}">{{ child.title }} <small>({{ child.pub_date }})</small></a></li>
+    {{ render_link(child) }}
     {% endfor %}
   </ul>
   {{ render_pagination(this.pagination) }}

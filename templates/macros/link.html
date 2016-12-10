@@ -1,0 +1,3 @@
+{% macro render_link(page, from_index=false) %}
+    <li><a href="{{ page|url }}">{{ page.title }} <small>({{ page.pub_date }})</small></a></li>
+{% endmacro %}
