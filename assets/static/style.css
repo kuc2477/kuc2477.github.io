@@ -53,6 +53,11 @@ div.page ul {
   margin-top: 7px;
 }
 
+div.page ol {
+  -webkit-padding-start: 35px;
+  margin-top: 7px;
+}
+
 div.page h3 {
   margin-bottom: 10px;
 }
@@ -95,6 +100,10 @@ div.page h3 {
   }
 
   div.page ul {
+    -webkit-padding-start: 24px;
+  }
+
+  div.page ol {
     -webkit-padding-start: 24px;
   }
 
