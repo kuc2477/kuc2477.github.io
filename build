@@ -23,6 +23,6 @@ timestamp=`date`
 git add -A
 git commit -m "build - ${timestamp}"
 git push origin source
-lektor clean
+lektor clean --yes
 lektor build
 lektor deploy
