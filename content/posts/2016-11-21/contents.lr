@@ -4,7 +4,7 @@ pub_date: 2016-11-21
 ---
 body:
 
-*Disclaimer: 이 글은 [Andrej Karpathy][4]의 포스트 [The state of computer vision][1]와 해당 글에 대한 [한 댓글][2]에서 영감을 받아 작성된 글입니다.*
+<small>Disclaimer: 이 글은 </small>[<small>Andrej Karpathy</small>][4]<small>의 포스트 </small>[<small>The state of computer vision</small>][1]<small>와 해당 글에 대한 </small>[<small>한 댓글</small>][2]<small>에서 영감을 받아 작성된 글입니다.</small>
 
 2012년 Geoffrey Hinton의 AlexNet이 ImageNet Challenge에서 우승하면서 딥러닝 전성시대의 신호탄을 쏘아올린 이후 수많은 인공신경망 아키텍처들이 고안되었다. 인류는 이런 인공신경망 아키텍처들에 기반해 이미지 분류, 음성인식, 사물탐지 등의 분야에서 비약적인 성능향상을 이루어냈다. 얼굴인식의 경우엔 인공신경망이 인간의 인식률을 능가했고, 일부 다른 패턴인식 문제에서도 인공신경망이 인간의 인식률을 뛰어넘었다. 매일이 크리스마스인 것처럼 기념비적인 성과들이 쏟아져 나왔다.
 
