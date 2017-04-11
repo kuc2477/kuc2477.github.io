@@ -21,14 +21,16 @@ a:hover {
 }
 
 code {
-  padding: 0;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+  padding-right: 0.4em;
+  padding-left: 0.4em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
   margin: 0;
   font-size: 87%;
+  color: #DD4A68;
   background-color: rgba(0,0,0,0.04);
   border-radius: 3px;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Consolas, 'Spoqa Han Sans', 'Liberation Mono', Menlo, Courier, monospace;
 }
 
 img {
