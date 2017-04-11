@@ -1,0 +1,104 @@
+<!doctype html>
+
+<!-- styles -->
+<meta charset="utf-8">
+<meta name="theme-color" content="#169bbd">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../static/normalize.css" />
+<link rel="stylesheet" href="../../static/style.css" />
+<link rel="shortcut icon" type="image/png" href="../../static/favicon.ico" />
+
+<!-- title -->
+<title>기능성-확장성 트레이드오프</title>
+
+<!-- body -->
+<body>
+  <header>
+    <!-- header -->
+    <h1>Ha Junsoo (河 俊 秀)</h1>
+
+    <!-- navigations -->
+    <nav>
+      <ul class="nav navbar-nav">
+        <li><a href="../../">Home</a></li>
+        
+          <li class="active"><a href="../../posts/">Posts</a></li>
+        
+          <li><a href="../../notes/">Notes</a></li>
+        
+          <li><a href="../../about/">About</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <!-- content -->
+  <div class="page">
+    
+  
+<div class="post">
+  <h2>기능성-확장성 트레이드오프</h2>
+  <p class="meta">
+    
+    2017-04-11
+  </p>
+  <p>편리한 기능일수록 확장 가능성은 떨어진다. 기능이 편리하다는 말은 크고 특수한 문제를 해결해준다는 뜻이고, 크고 특수한 문제를 해결해주는 기능은 그 문제밖에 해결하지 못할 가능성이 크기 때문이다. 기능 ABC는 문제 ABC를 멋지게 해결하지만, 문제가 조금만 바뀌어도 —  가령 문제 ABC가 문제 ABD로 변형되는 경우 —  순식간에 쓸모없는 기능으로 전락하고 만다.</p>
+<p>확장 가능성이 큰 기능은 대부분 사용하기 불편하다. 확장 가능하다는 말은 작고 보편적인 기능으로 쪼개져 있다는 의미고, 작고 보편적인 기능은 작고 보편적인 문제밖에 해결하지 못하기 때문이다. 기능 A는 문제가 조금 바뀌더라도 — 가령 문제 A가 문제 AB, AC, AD 따위로 확장되더라도 —  유연하게 사용될 수 있다는 장점이 있지만, 문제 A를 제외한 그 어느것도 완벽하게 해결하지 못한다는 단점이 있다. 물론 작고 보편적인 기능 여럿을 조합해 크고 특수한 문제를 해결할 수 있긴 하지만, 그 조합하는 과정에서 발생하는 부하가 온전히 사용자에게 위임된다는 점에서 여전히 불편한 것은 마찬가지다.</p>
+<p>이 기능성-확장성 트레이드오프의 딜레마는 인터페이스 설계에서도 나타난다. 지나치게 편리한 인터페이스는 훗날 확장하지 못하고, 필요 이상으로 확장 가능하게 설계된 인터페이스는 아무기능도 제공하지 못할 가능성이 크다. 기능성 좋은 인터페이스가 한샘 완제품 가구라면, 확장성 좋은 인터페이스는 이케아 조립식 가구에 비유할 수 있다. 인터페이스 설계는 이 기능성-확장성 트레이드오프, 또는 한샘-이케아 상충 사이에서 최적의 균형점을 찾는 일이다. 엔지니어라면 자신의 고객이 완제품 가구를 찾는 사람인지, 아니면 조립식 가구를 찾는 사람인지 고민해보는 것이 이 딜레마를 해결하는 데 도움이 될 수 있다. 결국 인터페이스 설계에 있어서 궁극적으로 중요한 것은 기능성도, 확장성도 아닌 사용자 경험이기 때문이다.</p>
+
+
+  <div class="flex">
+    <a style="margin-left: auto" href="..">목록으로 돌아가기 </a>
+  </div>
+</div>
+
+
+  </div>
+
+  <!-- footer -->
+  <footer>
+    &copy; Copyright - 2017 by Ha Junsoo (河 俊 秀)
+  </footer>
+</body>
+
+<!-- font -->
+<link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+
+<!-- flowtype -->
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="../../static/flowtype.js"></script>
+<script>
+    $('body').flowtype({
+       minimum   : 200,
+       maximum   : 500,
+       minFont   : 13,
+       maxFont   : 23,
+       fontRatio : 34,
+    });
+</script>
+
+<!-- mathjax -->
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"> </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ 
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      CommonHTML: {
+        scale: 90,
+      },
+    });
+  </script>
+
+<!-- highlightjs -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+
+<!-- GA -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87999212-1', 'auto');
+  ga('send', 'pageview');
+</script>
