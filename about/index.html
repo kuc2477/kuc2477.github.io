@@ -1,12 +1,15 @@
 <!doctype html>
 
 <!-- styles -->
-<meta charset="utf-8">
-<meta name="theme-color" content="#169bbd">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../static/normalize.css" />
-<link rel="stylesheet" href="../static/style.css" />
-<link rel="shortcut icon" type="image/png" href="../static/favicon.ico" />
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#169bbd">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../static/normalize.css" />
+  <link rel="stylesheet" href="../static/style.css" />
+  <link rel="shortcut icon" type="image/png" href="../static/favicon.ico" />
+  <link rel="canonical" href="https://hajunsoo.org" />
+</head>
 
 <!-- title -->
 <title>About Me</title>
@@ -80,7 +83,7 @@
 <!-- mathjax -->
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"> </script>
 <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({ 
+    MathJax.Hub.Config({
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
       CommonHTML: {
         scale: 90,
@@ -101,4 +104,11 @@
 
   ga('create', 'UA-87999212-1', 'auto');
   ga('send', 'pageview');
+</script>
+
+<!-- Redirect to HTTPS -->
+<script type="text/javascript">
+    var host = "hajunsoo.org";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
 </script>
