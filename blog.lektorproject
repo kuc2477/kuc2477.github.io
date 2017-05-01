@@ -2,4 +2,4 @@
 name = 河 俊 秀
 
 [servers.ghpages]
-target = ghpages+ssh://kuc2477@github.com/kuc2477/kuc2477.github.io?cname=hajunsoo.org
+target = ghpages+ssh://kuc2477@github.com/kuc2477.github.io?cname=hajunsoo.org
