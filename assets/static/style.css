@@ -33,6 +33,16 @@ code {
   font-family: Consolas, 'Spoqa Han Sans', 'Liberation Mono', Menlo, Courier, monospace;
 }
 
+blockquote {
+  -webkit-margin-start: 5px;
+  -webkit-margin-end: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
 img {
   width: 100%;
 }
@@ -68,6 +78,11 @@ div.page h3 {
   blockquote {
     -webkit-margin-start: 24px;
     -webkit-margin-end: 24px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 15px;
+    color: #777;
+    border-left: 4px solid #ddd;
   }
 }
 
@@ -75,6 +90,11 @@ div.page h3 {
   blockquote {
     -webkit-margin-start: 15px;
     -webkit-margin-end: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 15px;
+    color: #777;
+    border-left: 4px solid #ddd;
   }
 }
 
@@ -82,6 +102,11 @@ div.page h3 {
   blockquote {
     -webkit-margin-start: 12px;
     -webkit-margin-end: 12px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 15px;
+    color: #777;
+    border-left: 4px solid #ddd;
   }
 }
 
@@ -89,6 +114,11 @@ div.page h3 {
   blockquote {
     -webkit-margin-start: 8px;
     -webkit-margin-end: 8px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 15px;
+    color: #777;
+    border-left: 4px solid #ddd;
   }
 }
 
@@ -112,6 +142,11 @@ div.page h3 {
   blockquote {
     -webkit-margin-start: 5px;
     -webkit-margin-end: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 15px;
+    color: #777;
+    border-left: 4px solid #ddd;
   }
 }
 
