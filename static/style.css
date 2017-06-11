@@ -44,6 +44,8 @@ blockquote {
 }
 
 img {
+  max-height: 460px;
+  max-width: 560px;
   width: 100%;
 }
 
