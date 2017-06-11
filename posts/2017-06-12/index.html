@@ -1,0 +1,123 @@
+<!doctype html>
+
+<!-- styles -->
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#169bbd">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../static/normalize.css" />
+  <link rel="stylesheet" href="../../static/style.css" />
+  <link rel="shortcut icon" type="image/png" href="../../static/favicon.ico" />
+  <link rel="canonical" href="https://hajunsoo.org" />
+</head>
+
+<!-- title -->
+<title>분포 추정이 흥미로운 연구분야인 이유</title>
+
+<!-- body -->
+<body>
+  <header>
+    <!-- header -->
+    <h1>Ha Junsoo (河 俊 秀)</h1>
+
+    <!-- navigations -->
+    <nav>
+      <ul class="nav navbar-nav">
+        <li><a href="../../">Home</a></li>
+        
+          <li class="active"><a href="../../posts/">Posts</a></li>
+        
+          <li><a href="../../notes/">Notes</a></li>
+        
+          <li><a href="../../about/">About</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <!-- content -->
+  <div class="page">
+    
+  
+<div class="post">
+  <h2>분포 추정이 흥미로운 연구분야인 이유</h2>
+  <p class="meta">
+    
+    2017-06-12
+  </p>
+  <p>주어진 데이터에 대한 분포 P의 확률밀도 함수를 추정하는 일을 분포 추정이라고 한다. 다시말해 특정 데이터가 주어졌을 때, 이 데이터를 생성한 분포가 어떤 모양일지 추측하는 것이 분포 추정이다.</p>
+<p>양자역학을 개척한 공으로 노벨상을 수상한 물리학자 리처드 파인만은 다음과 같은 말을 남겼다.</p>
+<blockquote><p>What you cannot create, you do not understand.</p>
+</blockquote>
+<p>만들 수 없다면, 이해하지 못한 것이란 말이다. 다시말해 무언가를 이해했다면, 그것을 반드시 만들어낼 수 있어야 한다는 것인데, 통계학적 맥락에서 해석하면 위 명제는 다음과 같이 옮겨질 수 있다.</p>
+<blockquote><p>데이터의 본질을 이해했다면, 데이터를 생산해낼 수 있어야 한다.</p>
+</blockquote>
+<p>분포 추정이 흥미로운 연구분야인 이유가 바로 여기에 있다. 분포 추정은 데이터를 생산한 분포의 확률밀도 함수를 추측하는 일이다. 그리고 확률밀도 함수를 성공적으로 추측해내면, 간단한 랜덤 샘플링을 통해 데이터를 생산할 수 있다. 리처드 파인만의 주장에 의하면 분포 추정은 데이터의 본질을 이해하기 위한 충분조건인 셈이다.</p>
+<p>분포 추정은 실제 통계학적으로도 효용이 크다. 데이터의 분포를 알면 많은 문제가 쉽게 해결된다. 간단한 예로 데이터 분류기를 구현하거나, 데이터의 분산표현(distributed representation)을 추정하거나, 누락된 데이터를 채워넣는 일이 가능해진다. 분포 추정이 매력적인 연구분야인 이유다. 철학적인 의미도 있지만, 실제 이론상으로도 가치가 크다.</p>
+<p>물론 튜링 테스트를 통과하는 <a href="https://ko.wikipedia.org/wiki/%EA%B0%90%EA%B0%81%EC%A7%88#.EC.B2.A0.ED.95.99.EC.A0.81_.EC.A2.80.EB.B9.84">철학적 좀비</a>를 구현하는 것과 인간의 본질을 이해하는 것이 동치관계가 아니듯, 데이터를 생산해내는 데 성공했다고 해서 그 본질을 이해한 것은 아니라고 비판할 수 있다. 알파고가 사람처럼 바둑을 둘 줄은 알지만, 그 원리를 이해하고서 두는 것은 아니잖냐는 것이다.</p>
+<p>그러나 인류는 아직 <a href="https://ko.wikipedia.org/wiki/%EA%B0%90%EA%B0%81%EC%A7%88#.EA.B8.B0.EB.8A.A5.EC.A3.BC.EC.9D.98">본질을 이해한다는 것</a>이 무엇인지에 대한 합의에 도달하지 못했다. 어쩌면 <a href="https://en.wikipedia.org/wiki/Functionalism_(philosophy_of_mind)">기능주의</a> 철학자들의 주장처럼, 존재의 본질을 이해한다는 것은 그 존재의 기능을 재현하는 것과 동치관계일지도 모른다. 알파고가 사람처럼 바둑을 뒀다면, 그거야말로 바둑을 이해한게 아닐까? 그렇다면 성공적인 분포 추정은 데이터의 본질을 이해하는 것과 같은 셈이다. 파인만 명제의 역이 성립한다.</p>
+<p>물론 분포 추정은 데이터 본질 이해를 위한 필요충분 조건이 되진 못한다. 아직 확실하지 않다. 하지만 손가락 빨고 앉아있는 것보단 분포 추정이라는 충분조건에 베팅하는 편이 현명하다고 본다. 공부 열심히 한다고 해서 좋은 대학을 가는건 아니지만, 공부 열심히 하는 것이 좋은 대학에 입학하기 위한 현명한 전략이듯 말이다. 언제나 그렇듯, 불확실성이 큰 상황에선 충분조건에 투자하는 것도 나쁘지 않은 선택이다.</p>
+
+
+  <div class="flex">
+    <a style="margin-left: auto" href="..">목록으로 돌아가기 </a>
+  </div>
+</div>
+
+
+  </div>
+
+  <!-- footer -->
+  <footer>
+    &copy; Copyright @ 2017 by Ha Junsoo (河 俊 秀)
+  </footer>
+</body>
+
+<!-- font -->
+<link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+
+<!-- flowtype -->
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="../../static/flowtype.js"></script>
+<script>
+    $('body').flowtype({
+       minimum   : 200,
+       maximum   : 500,
+       minFont   : 13,
+       maxFont   : 23,
+       fontRatio : 34,
+    });
+</script>
+
+<!-- mathjax -->
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"> </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      CommonHTML: {
+        scale: 90,
+      },
+    });
+  </script>
+
+<!-- highlightjs -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+
+<!-- GA -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87999212-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- Redirect to HTTPS -->
+<script type="text/javascript">
+    var host = "hajunsoo.org";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
